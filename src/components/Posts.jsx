@@ -1,12 +1,14 @@
 
-const Posts = ({name}) =>{
+const Posts = ({notes}) =>{
     // logic
 
 
     // ui 
     return(
         <div>
-            <h1> {name}</h1>
+            {notes.map((note, index) => (
+                <p key={index}>{note}</p>
+            ))}
 
         </div>
     )

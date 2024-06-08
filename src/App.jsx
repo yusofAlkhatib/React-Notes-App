@@ -7,16 +7,17 @@ import CreatePost from './components/CreatePost'
 
 function App() {
 
-  let Name = "Learn Python basics "
+  const [usertext,setUserText] = useState('')
+  const [notes,setNotes] = useState([])
+
 
   
 
 
   return (
     <>
-
-      < CreatePost />
-      < Posts name={Name} />
+      < CreatePost notes={notes} setNotes={setNotes} usertext={usertext} setUserText={setUserText} />
+      < Posts notes={notes} />
     </>
   )
 }

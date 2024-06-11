@@ -15,15 +15,27 @@ const CreatePost = ({notes,setNotes,usertext,setUserText}) =>{
     }
 
     // ui
-    return(
-        <div> 
+    return (
+        <div className="container mt-4">
             <form onSubmit={notesFormSubmit}>
-                <input type="text" value={usertext} onChange={userInputHandle} placeholder="Enter Note Details" /> 
-                <input type="submit" value="Add Note " /> 
+                <div className="row g-3 shadow">
+                    <div className="col">
+                        <input
+                            type="text"
+                            className="form-control"
+                            id="noteInput"
+                            value={usertext}
+                            onChange={userInputHandle}
+                            placeholder="Enter Note Details"
+                        />
+                    </div>
+                    <div className="col-auto">
+                        <button type="submit" className="btn btn-primary">Add Note</button>
+                    </div>
+                </div>
             </form>
         </div>
-
-    )
+    );
 
 }
 

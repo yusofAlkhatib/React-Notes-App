@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
-      < CreatePost notes={notes} setNotes={setNotes} usertext={usertext} setUserText={setUserText} />
-      < Posts notes={notes} />
+      <CreatePost notes={notes} setNotes={setNotes} usertext={usertext} setUserText={setUserText} />
+      <Posts notes={notes} />
     </>
   )
 }

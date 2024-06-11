@@ -9,7 +9,7 @@ const CreatePost = ({notes,setNotes,usertext,setUserText}) =>{
     }
 
     const notesFormSubmit = (e) =>{
-        e.preventDefult();
+        e.preventDefault();
         setNotes([...notes,usertext])
         setUserText('')
     }
